@@ -3,12 +3,12 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: 'kkzzyt的blog',
   description: '第一次使用vitePress',
+  base: '/zhu325/',
   themeConfig: {
     nav: [
       { text: '主页', link: '/' },
       { text: '描述页面', link: '/' },
     ],
-
     sidebar: [
       {
         text: 'Examples',
