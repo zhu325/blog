@@ -9,7 +9,7 @@ export default defineConfig({
       { text: '主页', link: '/' },
       {
         text: '快速搭建博客',
-        link: '/1.使用vitepress快速搭建博客/1.使用vitepress快速搭建博客',
+        link: '/1/1',
       },
     ],
     sidebar: [
