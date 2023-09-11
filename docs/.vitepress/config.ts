@@ -5,7 +5,6 @@ import { nginxSidebar } from './backend/nginxSidebar'
 import { frontendNav } from './frontend'
 export default {
   base: '/blog/',
-  outDir: '../public',
   title: 'kkzzyyt的个人记录',
   description: 'Talk is cheap, show me your code.',
   themeConfig: {
