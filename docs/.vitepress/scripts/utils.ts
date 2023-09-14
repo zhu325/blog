@@ -4,7 +4,9 @@ const fs = require('fs')
 //递归获取指定目录下的所有指定后缀名文件列表
 export const walk = function (dir, subDir = '') {
   let results: Record<string, any> = []
+
   const list = fs.readdirSync(dir + subDir)
+
   list.forEach((file: String) => {
     file = dir + subDir + '/' + file
     if (path.extname(file) === '.md') {

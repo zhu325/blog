@@ -1,15 +1,15 @@
 import { backendNav } from './backend'
-import { gitSidebar } from './backend/gitSidebar'
-import { nestjsSidebar } from './backend/nestjsSiderbar'
-import { nginxSidebar } from './backend/nginxSidebar'
+import { nestjsSidebar } from './backend/nestjsSidebar'
+import { diaryNav } from './diary'
 import { frontendNav } from './frontend'
+
 export default {
   base: '/blog/',
   title: 'kkzzyyt的个人记录',
   description: 'Talk is cheap, show me your code.',
   themeConfig: {
-    siteTitle: '📝 code',
-    logo: '/img/logo.png',
+    siteTitle: 'coder diary',
+    logo: '/logo.png',
     nav: [
       {
         text: '首页',
@@ -17,13 +17,12 @@ export default {
       },
       frontendNav,
       backendNav,
+      diaryNav,
     ],
     sidebar: {
       // 前端
       // 后端
       '/backend/nestjs/': nestjsSidebar,
-      '/backend/nginx/': nginxSidebar,
-      '/backend/gitLearn/': gitSidebar,
     },
 
     socialLinks: [
@@ -39,6 +38,6 @@ export default {
     // 暂时没发现这个属性有啥用
     outlineBadges: true,
     // 设置所有aside的标题
-    outlineTitle: 'kk',
+    outlineTitle: '⚓️ 大纲',
   },
 }
